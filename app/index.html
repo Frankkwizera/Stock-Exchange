@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Stock Exchange - Truffle Webpack Demo w/ Frontend</title>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="./app.js"></script>
+</head>
+<body>
+    <div class="exchange">
+    <div class=" panel panel-primary">
+      <div class="panel panel-heading">
+        <h3>Stock Exchange</h3>
+      </div>
+      <div class="panel panel-body">
+        <h5>Company Stock Balance - <span class="black"><span id="holdingBalance"></h5>
+        <h5>Account Stock Balance - <span class="black"><span id="balance"></h5>
+        <h5>Account Ether Balance - <span class="black"><span id="etherBalance"></h5>
+     </div>
+     <div class="panel panel-footer">
+       <button id="buy" class="btn btn-success" onclick="App.buy()">Buy</button>
+       <button id="sell" class="btn btn-danger" onclick="App.sell()">Sell</button>
+     </div>
+  </div>
+  <h3>Latest Transaction</h3><span id="status"></span>
+</div>
+</body>
+</html>
